@@ -10,8 +10,8 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.rasappan.ldap.rest.useradmin")
-@EnableLdapRepositories(value = "com.rasappan.ldap.rest.useradmin.domain")
+@ComponentScan(basePackages = "com.rasappan.ldap")
+@EnableLdapRepositories(value = "com.rasappan.ldap.domain")
 @PropertySource(value = "classpath:ldap.properties")
 public class AppConfig extends WebMvcConfigurerAdapter {
     @Override

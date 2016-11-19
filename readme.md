@@ -18,3 +18,15 @@ Thus, user administration in LDAP typically involves creating and manipulating `
 entries and adding or removing references to these entries in `groupOfName` or `groupOfUniqueName` entries.
 
 This application demonstrates to do this easily and efficiently using Spring LDAP.
+
+### Apache Directory Server (ApacheDS)
+For testing, download the [ApacheDS Studio](http://directory.apache.org/studio/), which would allow to launch a embedded ApacheDS.
+Update the [ldap.properties](src/main/resources/ldap.properties) to match the embedded ldap.
+
+### Build Instructions
+```
+mvn clean install
+```
+
+Deploy the war in a Application Container & test using the swagger UI at
+[http://localhost:8080/user-admin-ldap/swagger-ui.html](http://localhost:8080/user-admin-ldap/swagger-ui.html)
