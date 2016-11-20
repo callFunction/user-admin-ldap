@@ -19,9 +19,11 @@ entries and adding or removing references to these entries in `groupOfName` or `
 
 This application demonstrates to do this easily and efficiently using Spring LDAP.
 
-### Apache Directory Server (ApacheDS)
+### Apache Directory Server
 For testing, download the [ApacheDS Studio](http://directory.apache.org/studio/), which would allow to launch a embedded ApacheDS.
 Update the [ldap.properties](src/main/resources/ldap.properties) to match the embedded ldap.
+
+Sample [setup_data.ldif](src/test/java/resources/setup_data.ldif) can be imported into LDAP to help in testing.
 
 ### Build Instructions
 ```
